@@ -1,0 +1,51 @@
+/* Apply a reset and basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  font-family: 'Courier New', Courier, monospace;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Terminal window styling */
+#terminalWindow {
+  width: 80%;
+  max-width: 800px;
+  height: 500px;
+  border: 2px solid #555;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: #1e1e1e;
+  box-shadow: 0 0 10px #000;
+  overflow: hidden;
+}
+
+/* Output viewport */
+#viewPort {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  font-size: 14px;
+}
+
+/* Terminal input */
+#terminal {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  font-size: 14px;
+  border-top: 1px solid #555;
+}
